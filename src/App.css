@@ -1,4 +1,3 @@
-
 /* UTILITIES */
 html {
   scroll-behavior: smooth;
@@ -7,7 +6,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 a {
   text-decoration: none;
@@ -15,7 +13,6 @@ a {
 li {
   list-style: none;
 }
-
 
 /* NAVBAR STYLING */
 /* ref : https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/  */
@@ -26,11 +23,11 @@ li {
   padding: 10px;
   background-color: black;
   color: #fff;
-  margin :0px;
+  margin: 0px;
   /* added in order to make the nav bar sticky */
-  position: fixed; 
-  width: 100%; 
-  z-index:1;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 .nav-links a {
   color: #fff;
@@ -52,11 +49,11 @@ li {
 }
 .menu li {
   padding: 5px 14px;
-}   
+}
 /* hamburger */
-input[type=checkbox]{
+input[type="checkbox"] {
   display: none;
-} 
+}
 /*hamburger menu*/
 .hamburger {
   display: none;
@@ -64,81 +61,80 @@ input[type=checkbox]{
   user-select: none;
 }
 /* applaying media queries to make interactions */
-@media (max-width: 1096px) {
-  .menu { 
-      display:none;
-      position: absolute;
-      background-color:black;
-      right: 0;
-      left: 0;
-      text-align: center;
-      padding: 16px 0;
+@media (max-width: 1300px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
   }
   .menu li:hover {
-      display: inline-block;
-      background-color:grey;
-      transition: 0.3s ease;
+    display: inline-block;
+    background-color: grey;
+    transition: 0.3s ease;
   }
   .menu li + li {
-      margin-top: 12px;
+    margin-top: 12px;
   }
-  input[type=checkbox]:checked ~ .menu{
-      display: block;
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
   }
   .hamburger {
-      display: block;
+    display: block;
   }
 }
 
+/* more css rules */
 
-/* more css rules */ 
-
-.jumbotron-info{
+.jumbotron-info {
   margin-left: 30px;
 }
 
-.img-fluid{
+.img-fluid {
   max-width: 100%;
   height: auto;
-} 
+}
 
-#aboutMe{
+#aboutMe {
   padding-top: 100px;
 }
-#profile-img{
-  margin-top: 70px;
-}
+/* #profile-img {
+  margin-top:10px;
+} */
 
-.img-fluid{
+.img-fluid {
   max-width: 100%;
   height: auto;
-} 
+}
 
-#education li {
-  margin-left:30px ;
+#education  .ulDots li {
+  margin-left: 30px;
   list-style: circle;
 }
 
-#workExperience li {
-  margin-left:30px ;
+#workExperience  .ulDots li {
+  margin-left: 30px;
   list-style: circle;
 }
 
-.jumbotron{
+.jumbotron {
   margin-bottom: 5px;
-  padding:30px;
+  padding: 30px;
 }
 
-.logos{
+.logos {
   height: 50px;
   width: 140px;
 }
-#logo-arsenal{
+#logo-arsenal {
   position: relative;
   right: 40px;
 }
 
-#wsl-logo{
+#wsl-logo {
   height: 50px;
   width: 50px;
 }
@@ -165,22 +161,25 @@ input {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
-}  
+}
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: black;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   color: black;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
+  /* Microsoft Edge */
   color: black;
 }
 
-input:focus{
-  background: grey
+input:focus {
+  background: grey;
 }
 input:hover {
   background: rgb(178, 176, 176);
@@ -210,7 +209,7 @@ textarea:hover {
   width: 350px;
   padding: 0;
   margin: -5px 0px 0px 0px;
-  outline:none;
+  outline: none;
   cursor: pointer;
   border-top: none;
   border-bottom: 2px solid black;
@@ -220,4 +219,3 @@ textarea:hover {
   color: grey;
   color: black;
 }
-

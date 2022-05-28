@@ -1,7 +1,7 @@
 
-import React, {useLayoutEffect,useState} from 'react';
+import {useLayoutEffect,useState} from 'react';
 
-function useWindowSize() {
+const useWindowSize = () => {
     const [size, setSize] = useState([0, 0]);
     useLayoutEffect(() => {
       function updateSize() {
@@ -13,12 +13,5 @@ function useWindowSize() {
     }, []);
     return size;
 }
-  
-function WindowSizeInspector(props) {
-    const [width, height] = useWindowSize();
-    if(width>1096){
-        props.refe.current.checked=false
-    }
-    return ;
-}
-export default WindowSizeInspector;
+
+export default useWindowSize;
